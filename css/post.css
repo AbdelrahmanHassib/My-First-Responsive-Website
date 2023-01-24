@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FAFAFA;
+}
+
+/* Flex Containers */
+
+nav,
+.nav-containers,
+footer { display: flex; }
+
+/* --------------- */
+
+nav {
+    min-height: 7vh;
+    justify-content: space-between;
+    padding: 0.625em 1.5em 0.625em 1.25em;
+}
+
+nav a {
+    margin-left: 1.875em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+nav h2 {
+    margin-left: 0.3125em;
+}
+
+.nav-containers {
+    align-items: center;
+}
+
+.top-main {
+    margin: 2em auto; 
+    width: 90vw;
+}
+
+.top-main p {
+    line-height: 1.25;
+}
+
+.main-img {
+    margin: 2.25em auto;
+    border-radius: 0.1875em;
+    width: 90vw;
+    display: block;
+}
+
+.sub-articles-container img {
+    width: 90vw;
+}
+
+.sub-articles-container article {
+    margin-bottom: 2.5625em;
+}
+
+.main-middle-paragraph {
+    font-size: 1.143125rem; /* 18.29px */
+    line-height: 1.26em;
+    width: 90vw;
+    margin: 1.97em auto;
+}
+
+strong {
+    font-size: 1.5rem;
+    line-height: 1.26em;
+    display: block;
+    margin-top: 0.8em;
+}
+
+.recent-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4.5625em 3.3125em 3.125em;
+}
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+    background: #202020;
+    font-size: 0.75rem;
+    height: 10vh;
+    text-align: center;
+}
+
+.footer-title {
+    color: #ECECEC;
+    margin-bottom: 0.25em;
+}
+
+.footer-copyright {
+    color: #D7D7D7;
+    margin: 0;
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+    nav { padding: 1.5em 3.3125em; }
+    
+    .main-middle-paragraph {
+        width: 75vw;
+        margin: 0 auto auto 121px;
+        inline-size: 80%;
+    }
+    
+    .top-main { 
+        margin: 4.4375em auto auto 7.5625em;
+        width: 75vw
+    }
+    
+    .sub-articles-paragraph { inline-size: 27vw; }
+    
+    .sub-articles-container {
+        display: flex;
+        column-gap: 1.625em;
+    }
+    
+    .sub-articles-container img {
+        width: auto;
+    }
+    
+    .sub-articles-container article {
+        margin-bottom: 0;
+    }
+    
+}
